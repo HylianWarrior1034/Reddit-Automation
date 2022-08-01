@@ -22,10 +22,11 @@ import random
 from movie import movie
 from autopost import *
 
-username = "HylianWarrior1034"          # Enter your username for reddit
-password = "Dsm10142!"                   # Enter your password for reddit
+username = ""          # Enter your username for reddit
+password = ""                   # Enter your password for reddit
 
-service = Service(r"C:\Users\Dm101\Desktop\Reddit Automation\venv\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe")
+path_to_chromedriver = r""
+service = Service(path_to_chromedriver)
 
 # setup our header info, which gives reddit a brief description of our app
 headers = {'User-Agent': 'AutoBot/0.0.1'}
